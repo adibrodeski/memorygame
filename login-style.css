@@ -1,0 +1,59 @@
+/* Custom Pink Theme and Layout Adjustments */
+
+body {
+  background-color: #f9f9f9; /* Light grey background */
+  font-family: Arial, sans-serif; /* Change font to Arial for a modern look */
+}
+
+.take-a-break-image {
+  width: 120px; /* Adjust size */
+  height: auto;
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h3 {
+  color: #ff66b2; /* Pink color for header */
+  font-size: 24px; /* Adjust font size */
+}
+
+.form-control {
+  border: 2px solid #ff66b2; /* Pink border */
+  border-radius: 5px;
+  padding: 15px; /* Increase padding for larger input */
+  font-size: 16px; /* Increase font size */
+}
+
+.btn-pink {
+  background-color: #ff66b2;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #ff4da6;
+}
+
+.btn-info {
+  background-color: #ff66b2;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #ff4da6;
+}
+
+.tooltip-inner {
+  background-color: #ff66b2;
+  color: #fff;
+}
+
+.tooltip-arrow {
+  border-top-color: #ff66b2 !important;
+}
