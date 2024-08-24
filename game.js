@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    restart();
+    tryagain();
   });
   
   const gridContainer = document.querySelector(".grid-container");
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (numCards == 0) {
       const formattedTime = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
       setTimeout(function() {
-        gameOver(username, score, formattedTime);
+        goodgame(username, score, formattedTime);
     }, 1000);
     }
   }
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lockBoard = false;
   }
   
-  function restart() {
+  function tryagain() {
     resetBoard();
     shuffleCards(cards);
     score = 0;
@@ -278,8 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
       return (num < 10) ? ("0" + num) : num;
   }
   
-  function gameOver(username, score, time){
-    const baseUrl = 'gameOver.html';
+  function goodgame(username, score, time){
+    const baseUrl = 'goodgame.html';
   
     const encodedUsername = encodeURIComponent(username);
     const encodedScore = encodeURIComponent(score);
